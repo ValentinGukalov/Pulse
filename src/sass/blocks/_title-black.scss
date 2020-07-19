@@ -5,4 +5,11 @@
     font-weight: 700;
     margin: 0;
     line-height: 26px;
+    text-transform: uppercase;
+    &_white {
+        color: #fff;
+        font-size: 36px;
+        text-align: left;
+        line-height: 1;
+    }
 }
