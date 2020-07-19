@@ -40,8 +40,6 @@
             display: block;
             margin: 0 auto;
             margin-bottom: 15px;
-            width: 42px;
-            height: 46px;
         }
     }
     &__link {
@@ -54,5 +52,8 @@
             text-decoration: underline;
             color: #ffffff;
         }
+    }
+    &__official {
+        display: none;
     }
 }
