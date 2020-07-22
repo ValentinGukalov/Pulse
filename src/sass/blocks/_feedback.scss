@@ -1,0 +1,43 @@
+.feedback {
+    padding-bottom: 70px;
+    &__block {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-item {
+        margin-bottom: 100px;
+        img {
+            margin-right: 62px;
+            height: 169px;
+            max-width: 100%;
+        }
+        display: flex;
+        justify-content: center;
+        &__text {
+            width: 650px;
+        }
+        &__title {
+            color: #0d0d0d;
+            font-family: "Museo Sans Cyrl 700";
+            font-size: 18px;
+            line-height: 17px;
+        }
+        &__subtitle {
+            line-height: 13px;
+            color: #646464;
+            font-family: "Museo Sans Cyrl 300";
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        &__descr {
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Museo Sans Cyrl 500";
+            margin-top: 19px;
+            line-height: 1.15;
+        }
+    }
+}
