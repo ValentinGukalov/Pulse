@@ -6,8 +6,9 @@ let slider = tns({
     controls: false,
     nav: false,
     responsive: {
-        640: {
-            nav: true
+        320: {
+            nav: true,
+            items: 1
         },
         992: {
             nav: false

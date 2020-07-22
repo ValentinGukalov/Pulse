@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .promo {
         &__title {
             font-size: 35px;
@@ -23,6 +23,23 @@
         }
         .next {
             right: -20px;
+        }
+    }
+    .catalog{
+        &-item {
+            width: 280px;
+            &__content {
+                padding-right: 20px;
+                &_active {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .button {
+        &_buy {
+            width: 110px;
+            height: 36px;
         }
     }
 }
@@ -149,6 +166,15 @@
 
         }
     }
+    .catalog{
+        &__content {
+            justify-content: space-around;
+        }
+        &-item {
+            width: 330px;
+            margin-right: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -245,11 +271,59 @@
             font-size: 14px;
         }
     }
+    .carousel {
+        .container {
+            position: relative;
+        }
+        .tns-item {
+            img {
+                width: 520px;
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            margin-top: 30px;
+        }
+        .container {
+            max-width: 95%;
+        }
+
+        &__tabs {
+            margin-top: 45px;
+        }
+        &__tab {
+            width: 150px;
+            height: 40px;
+            font-size: 16px;
+            div {
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+        &-item {
+            width: 270px;
+            margin-right: 10px;
+            margin-left: 10px;
+            &:nth-child(3n) {
+                margin-right: 10px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .catalog {
+        &-item {
+            width: 300px;
+        }
+    }
 }
 
 @media screen and (max-width: 575px) {
     .container {
-        max-width: 310px;
+        max-width: 320px;
     }
     .header {
         align-items: flex-end;
@@ -301,6 +375,7 @@
         }
     }
     .advantages {
+        padding: 20px 0;
         .title-black {
             font-size: 20px;
         }
@@ -328,13 +403,16 @@
         }
     }
     .consultation {
-        padding: 25px 0 20px 0;
+        padding: 35px 0 30px 0;
         &__descr {
             margin-top: 20px;
             font-size: 11px;
         }
         .container {
-            max-width: 280px;
+            max-width: 290px;
+        }
+        .title-black_white {
+            font-size: 13px;
         }
     }
     .feed-form {
@@ -343,10 +421,48 @@
         input {
             height: 30px;
             font-size: 10px;
+            padding: 0 10px;
         }
         .button_submit {
             height: 30px;
             font-size: 10px;
+        }
+    }
+    .carousel {
+        .tns-inner {
+            width: 320px;
+            overflow: hidden;
+        }
+        .tns-item {
+            img {
+                width: 300px;
+            }
+        }
+        .tns-nav {
+            top: -20%;
+        }
+        padding: 50px 0;
+        padding-bottom: 20px;
+    }
+    .catalog {
+        &__tabs {
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        &__tab {
+            width: 140px;
+            height: 30px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            div {
+                line-height: 30px;
+            }
+        }
+        .title-black {
+            font-size: 16px;
+        }
+        &__content {
+            margin-top: 0;
         }
     }
 }

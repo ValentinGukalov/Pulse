@@ -34,12 +34,13 @@
             background-color: $main_color;
             color: #ffffff;
             border: none;
+            padding-top: 2px;
         }
     }
     &__content {
         margin-top: 60px;
         display: none;
-        justify-content: space-between;
+        justify-content: start;
         flex-wrap: wrap;
         &_active {
             display: flex;
