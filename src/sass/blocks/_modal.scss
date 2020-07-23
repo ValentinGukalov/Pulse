@@ -43,10 +43,16 @@
             min-height: 140px;
             padding: 38px 76px 43px 78px;
         }
+        input.error {
+            border: 1px solid red;
+            margin-bottom: 5px;
+        }
+        label.error {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
     }
-    // #thanks {
-
-    // }
 }
 
 #consultation, #order, #thanks {

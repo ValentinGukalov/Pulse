@@ -8,4 +8,14 @@
         font-weight: 500;
         line-height: 1;
     }
+    input.error {
+        border: 1px solid red;
+        margin-bottom: 5px;
+    }
+    label.error {
+        color: #fff;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 12px;
+    }
 }
