@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/font.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -67,7 +68,7 @@
                     </div>
                 </div>
                 <div class="advantages__block advantages__second">
-                    <img src="img/heart_icon.png" alt="Заботимся о здоровье">
+                    <img src="img/heart_icon.png" alt="Заботимся о здоровье" class="advantages__icon_heart">
                     <div class="advantages__text_block">
                         <h3 class="advantages__subtitle">Заботимся о здоровье</h3>
                         <div class="advantages__descr">Мы работаем для того, 
@@ -387,7 +388,7 @@
         <div class="container">
             <h2 class="title-black">отзывы клиентов</h2>
         <div class="feedback__block">
-            <div class="feedback-item">
+            <div class="feedback-item animate__fadeInUp animate__animated wow" data-wow-offset="100">
                 <img src="img/feedback_1.png" alt="Отзыв 1">
                 <div class="feedback-item__text">
                     <div class="feedback-item__title">Ирина Иванченко 
@@ -401,7 +402,7 @@
                         Спасибо, RunSmart! </div>
                 </div>
             </div>
-            <div class="feedback-item">
+            <div class="feedback-item animate__fadeInUp animate__animated wow" data-wow-offset="100">
                 <img src="img/feedback_2.png" alt="Отзыв 2">
                 <div class="feedback-item__text">
                     <div class="feedback-item__title">Иван Сёмочкин
@@ -413,7 +414,7 @@
                         С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
                 </div>
             </div>
-            <div class="feedback-item">
+            <div class="feedback-item animate__fadeInUp animate__animated wow" data-wow-offset="100">
                 <img src="img/feedback_3.png" alt="Отзыв 3">
                 <div class="feedback-item__text">
                     <div class="feedback-item__title">Юлия Дашкина
@@ -475,14 +476,18 @@
                 в ближайшее время!</div>
         </div>
     </div>
+    
+    <a href="#up" class="page-up">
+        <img src="img/chevron-circle-up-solid.svg" alt="go_up">
+    </a>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/script.js">
-    </script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

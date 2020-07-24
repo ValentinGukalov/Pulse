@@ -34,4 +34,12 @@
     &__second {
         width: 243px;
     }
+    &__icon {
+        &_heart {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
 }

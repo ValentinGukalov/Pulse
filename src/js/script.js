@@ -82,7 +82,36 @@ $(document).ready(function() {
     validateForms('#consultation form');
     validateForms('#order form');
 
-    $('input[name=phone]').mask("+7 (999) 999-99-99");
+    $('input[name=phone]').mask("+7 (999) 999-99-99"); //маска для телефона. для того чтобы маска работала нужен плагин - подключить js файл к проекту
+    $('form').submit(function(e) { //добавляем функции аргумент event
+        e.preventDefault(); //предотвращаем стандартное браузерное поведение - перезугрзка страницы после submit
+        $.ajax({ //используем метод? ajax библиотеки jQuery
+            type: "POST", //указываем серверу, что пользователь отдает данные серверу, а не получает
+            url: "mailer/smart.php", //прописываем url куда мы будем отправлять наш запрос
+            data: $(this).serialize() //подготовка данных для отправки на сервер
+        }).done(function() { //выполнение функции по выполнению функции $.ajax
+            $(this).find("input").val(""); //находим инпуты this формы (текущей) и их value опустошаем
+            $('#consultation, #order').fadeOut('fast');
+            $('.overlay, #thanks').fadeIn('fast');
+            $('form').trigger('reset'); //триггер для перезапуска формы, для заполнения ее placeholder'ами
+        });
+        return false;
+    });
+
+    //smooth scrolling up and hiding it if scrolling < 1600px
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1200) {
+            $('.page-up').fadeIn('slow');
+        } else {
+            $('.page-up').fadeOut('slow');
+        }
+    });
+    $('a[href^="#"]').click(function() {
+        const _href = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    })
+    new WOW().init();
 });
 
 
